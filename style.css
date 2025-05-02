@@ -1,0 +1,134 @@
+
+:root{
+    /* Variáveis de cores */
+    --color-white: white;
+    --color-gray: #f2f4f7;
+    --color-gray-2: #dddfe2;
+    --color-dark: #1d2129;
+    --color-blue: #1b74e4;
+    --color-blue-2: #166fe5;
+    --color-green: #42b72a;
+    --color-green-2: #36a420;
+}  
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /*Altere depois*/
+}
+
+.content{
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center;*/
+    flex-wrap: wrap;
+    width: 40vh; /* configure depois*/
+}
+
+.content-info{
+    display: flex; /* apague depois, só pra ver */
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-login{
+    display: flex; /* apague depois, só pra ver */
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-login-box{
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 12px ;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 2px 4px, rgb(0 0 0 / 10%) 0px 0px 0px;
+}
+
+.inputs{
+    padding: 15px;
+    height: 22px;
+    border-radius: 6px;
+    border: 1px solid var(--color-gray-2);
+    width: 90%;
+    font-size: 17px;
+    color: var(--color-dark);
+}
+
+.inputs:focus{
+    box-shadow: 0 0 0 2px var(--color-gray-2);
+}
+
+.btn{
+    padding: 15px;
+    border: none;
+    color: var(--color-white);
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.1rem; /* altere depois... */
+    transition: .2s;
+}
+
+a{
+    color: var(--color-blue);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+hr{
+    width: 100%;
+    border: 1px solid var(--color-gray);
+}
+
+.btn-enter{
+    background-color: var(--color-blue);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn-enter:hover{
+    background-color: var(--color-blue-2);
+}
+
+.forgot-password{
+    font-size: 90%;
+}
+
+.btn-create-account{
+    background-color: var(--color-green);
+    width: auto;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.btn-create-account:hover{
+    background-color: var(--color-green-2);
+}
+
+
+h1{
+    color: var(--color-blue);
+    font-size: 48px;
+}
+
+img{
+    width: 240px;
+}
+
+p{
+    font-size: 18px;
+}
+
